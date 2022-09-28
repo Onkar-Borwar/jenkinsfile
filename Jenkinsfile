@@ -10,21 +10,21 @@ stages
     {  
         stage ('Install Apache')
                {
-                  step
+                  steps
                   {
                  sh "sudo yum install httpd -y"
                   }
                }
        stage ('Start Apache')
                   {
-                  step
+                  steps
                   {
                      sh "sudo service httpd start"
                   }
                   }
        stage ('Deploye index')
                   {
-                  step         
+                  steps         
                      {
                         sh "sudo cp -r index.html /var/www/html"
                  sh "sudo chmod -R 777 /var/www/html/index.html"
