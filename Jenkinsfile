@@ -5,7 +5,7 @@ pipeline
 {
    agent 
     {
-          label('built-in')
+          label('slave2')
     }
 
 stages
