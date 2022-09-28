@@ -2,7 +2,7 @@ pipeline
 {
    agent 
     {
-          label('slave 2')
+          label('slave1')
     }
 
 stages
@@ -12,6 +12,7 @@ stages
                {
                   steps
                   {
+                     sh "sudo yum remove httpd -y"
                  sh "sudo yum install httpd -y"
                   }
                }
