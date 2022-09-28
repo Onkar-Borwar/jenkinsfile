@@ -8,7 +8,7 @@ pipeline
 stages
 
     {  
-        stage ('Install Apache')
+        stage ('Install')
                {
                   steps
                   {
